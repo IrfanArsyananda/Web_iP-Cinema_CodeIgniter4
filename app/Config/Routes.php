@@ -36,6 +36,7 @@ $routes->get('/movies/(:any)', 'Movies::detailMovie/$1');
 $routes->get('/movies-add', 'Movies::createMovie');
 $routes->get('/movies-edit/(:any)', 'Movies::updateMovie/$1');
 $routes->get('/movies/delete/(:num)', 'Movies::deleteMovie/$1');
+$routes->get('/admin', 'admin::index');
 
 /*
  * --------------------------------------------------------------------
