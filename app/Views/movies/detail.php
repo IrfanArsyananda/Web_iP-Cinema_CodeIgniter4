@@ -10,7 +10,7 @@
             <div class="card mb-3" style="max-width:fit-content">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="/img/<?= $movies['cover_movie']; ?>" class="img-fluid rounded-start" alt="...">
+                        <img src="<?= base_url('img/') . $movies['cover_movie']; ?>" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -18,8 +18,8 @@
                             <p class="card-text"><?= $movies['synopsis_movie']; ?></p>
                             <p class="card-text"><small class="text-muted"><?= $movies['year_movie']; ?></small></p>
                             <div class="buttonForForm">
-                                <a href="/movies-edit/<?= $movies['slug_movie']; ?>" class="btn btn-warning">Edit</a>
-                                <a href="/movies" class="btn btn-outline-warning">Kembali</a>
+                                <a href="<?= base_url('/movies-edit/') . $movies['slug_movie']; ?>" class="btn btn-warning">Edit</a>
+                                <a href="<?= base_url('/movies') ?>" class="btn btn-outline-warning">Kembali</a>
                             </div>
                         </div>
                     </div>

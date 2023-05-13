@@ -27,12 +27,12 @@
                     foreach ($movies as $mo) : ?>
                         <tr>
                             <th scope="row"><?= $no++; ?> </th>
-                            <td><img src="/img/<?= $mo['cover_movie']; ?>" alt="" class="movieCoverImage"></td>
+                            <td><img src="<?= base_url('/img/') . $mo['cover_movie']; ?>" alt="" class="movieCoverImage"></td>
                             <td><?= $mo['title_movie']; ?></td>
                             <td><?= $mo['year_movie']; ?></td>
                             <td>
-                                <a href="/movies/<?= $mo['slug_movie']; ?>" class="btn btn-success">Detail</a>
-                                <form action="/movies/<?= $mo['id_movie']; ?>" method="POST" class="d-inline">
+                                <a href="<?= base_url('/movies/') . $mo['slug_movie']; ?>" class="btn btn-success">Detail</a>
+                                <form action="<?= base_url('/movies/') . $mo['id_movie']; ?>" method="POST" class="d-inline">
                                     <?= csrf_field(); ?>
                                     <input type="hidden" name="_method" value="DELETE">
                                     <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin hapus <?= $mo['title_movie']; ?> ?');">Delete</button>

@@ -7,14 +7,14 @@
             <h1 class="my-3">
                 <center>FORM EDIT MOVIE</center>
             </h1>
-            <form action="/movies/update/<?= $movies['id_movie']; ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= base_url('/movies/update/') . $movies['id_movie']; ?>" method="post" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <input type="hidden" name="slugMov" value="<?= $movies['slug_movie']; ?>">
                 <input type="hidden" name="coverMovOld" value="<?= $movies['cover_movie']; ?>">
                 <div class="row mb-3">
                     <label for="coverMov" class="col-sm-2 col-form-label">Sampul</label>
                     <div class="col-sm-2">
-                        <img src="/img/<?= $movies['cover_movie']; ?>" class="img-thumbnail cov-add-preview">
+                        <img src="<?= base_url('/img/') . $movies['cover_movie']; ?>" class="img-thumbnail cov-add-preview">
                     </div>
                     <div class="col-sm-8">
                         <div class="mb-3">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="buttonForForm">
                     <button type="submit" class="btn btn-primary">Simpan</button>
-                    <a href="/movies/<?= $movies['slug_movie']; ?>" class="btn btn-outline-warning">Kembali</a>
+                    <a href="<?= base_url('/movies/') . $movies['slug_movie']; ?>" class="btn btn-outline-warning">Kembali</a>
                 </div>
             </form>
         </div>

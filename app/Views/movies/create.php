@@ -8,12 +8,12 @@
                 <center>FORM ADD MOVIE</center>
             </h1>
 
-            <form action="/movies/save" method="post" enctype="multipart/form-data">
+            <form action="<?= base_url('/movies/save') ?>" method="post" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <div class="row mb-3">
                     <label for="coverMov" class="col-sm-2 col-form-label">Sampul</label>
                     <div class="col-sm-2">
-                        <img src="/img/default-movie-cover.png" class="img-thumbnail cov-add-preview">
+                        <img src="<?= base_url('/img/default-movie-cover.png') ?>" class="img-thumbnail cov-add-preview">
                     </div>
                     <div class="col-sm-8">
                         <div class="mb-3">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="buttonForForm">
                     <button type="submit" class="btn btn-primary">Tambah</button>
-                    <a href="/movies" class="btn btn-outline-warning">Kembali</a>
+                    <a href="<?= base_url('/movies') ?>" class="btn btn-outline-warning">Kembali</a>
                 </div>
             </form>
         </div>

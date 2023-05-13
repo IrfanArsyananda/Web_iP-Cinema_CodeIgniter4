@@ -33,12 +33,12 @@
                     foreach ($admins as $ad) : ?>
                         <tr>
                             <th scope="row"><?= $no++; ?> </th>
-                            <td><img src="/img/<?= $ad['admin_avatar']; ?>" alt="" class="movieCoverImage"></td>
+                            <td><img src="<?= base_url('/img/') . $ad['admin_avatar']; ?>" alt="" class="movieCoverImage"></td>
                             <td><?= $ad['admin_username']; ?></td>
                             <td><?= $ad['admin_password']; ?></td>
                             <td>
-                                <a href="/admin/<?= $ad['admin_id']; ?>" class="btn btn-success">Detail</a>
-                                <form action="/admin/<?= $ad['admin_id']; ?>" method="POST" class="d-inline">
+                                <a href="<?= base_url('/admin/') . $ad['admin_id']; ?>" class="btn btn-success">Detail</a>
+                                <form action="<?= base_url('/admin/') . $ad['admin_id']; ?>" method="POST" class="d-inline">
                                     <?= csrf_field(); ?>
                                     <input type="hidden" name="_method" value="DELETE">
                                     <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin hapus <?= $ad['admin_username']; ?> ?');">Delete</button>
