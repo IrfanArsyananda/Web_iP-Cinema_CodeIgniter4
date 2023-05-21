@@ -10,13 +10,10 @@
                     <a class="nav-link active" href="<?= base_url('/') ?>">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Movies
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Movies</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="<?= base_url('/movies') ?>">Movie List</a></li>
                         <li><a class="dropdown-item" href="<?= base_url('/movies-add') ?>">Add Movie</a></li>
-                        <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
                         <!-- <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -24,17 +21,17 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Admin
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="<?= base_url('/admin') ?>">Admin List</a></li>
                         <li><a class="dropdown-item" href="<?= base_url('/admin-add') ?>">Add Admin</a></li>
-                        <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
-                        <!-- <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Maps</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="<?= base_url('/maps/mapsbullets') ?>">Pulsating Bullets</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url('/maps/mapslines') ?>">Animation Lines</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
