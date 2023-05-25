@@ -24,14 +24,14 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="<?= base_url('/admin') ?>">Admin List</a></li>
-                        <li><a class="dropdown-item" href="<?= base_url('/admin-add') ?>">Add Admin</a></li>
+                        <!-- <li><a class="dropdown-item" href="<?= base_url('/admin-add') ?>">Add Admin</a></li> -->
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Maps</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="<?= base_url('/maps/mapsbullets') ?>">Pulsating Bullets</a></li>
-                        <li><a class="dropdown-item" href="<?= base_url('/maps/mapslines') ?>">Animation Lines</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url('/maps') ?>">Pulsating Bullets</a></li>
+                        <!-- <li><a class="dropdown-item" href="<?= base_url('/maps/mapslines') ?>">Animation Lines</a></li> -->
                     </ul>
                 </li>
                 <li class="nav-item">

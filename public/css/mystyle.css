@@ -1,0 +1,30 @@
+.movieCoverImage {
+    width: 100px;
+    border-radius: 10%;
+}
+
+/* .table>thead>tr>* {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table>tbody>tr>* {
+    vertical-align: middle;
+    text-align: center;
+} */
+
+.table {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.buttonForForm {
+    text-align: right;
+}
+
+#chartdivMaps {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    border-color: black;
+}
