@@ -8,4 +8,5 @@
     <!-- HTML -->
     <div id="chartdivMaps"></div>
 </div>
+<?= $this->include('Views/layout/scriptMaps'); ?>
 <?= $this->endsection('content'); ?>

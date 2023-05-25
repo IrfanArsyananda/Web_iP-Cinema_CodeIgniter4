@@ -50,7 +50,6 @@
             }
         }
     </script>
-    <?= $this->include('layout/scriptMaps'); ?>
 
 </body>
 <footer>
