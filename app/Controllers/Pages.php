@@ -2,15 +2,20 @@
 
 namespace App\Controllers;
 
+use App\Models\CarouselModel;
+
 class Pages extends BaseController
 {
     public function index()
     {
-        // echo "Controller Pages Method Index";
+        $model = new CarouselModel();
         $data = [
-            'title' => 'Home | First Project CI'
+            'title' => 'Home | First Project CI',
+            'carouselData' => $model->getCarousels()
         ];
+        // dd($model->getCarousels());
         return view('pages/home', $data);
+        // echo "Controller Pages Method Index";
     }
 
     public function contact()

@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class MapsModel extends Model
+class CarouselModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'province_data';
-    protected $primaryKey       = 'id';
+    protected $table            = 'carousel_data';
+    protected $primaryKey       = 'carousel_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'province_id', 'province_name', 'province_altname', 'province_latitude', 'province_longitude'];
+    protected $allowedFields    = ['carousel_name', 'carousel_desc', 'carousel_image'];
 
     // Dates
     protected $useTimestamps = true;
@@ -39,13 +39,9 @@ class MapsModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function getRegencies()
+    public function getCarousels()
     {
-        return $this->findAll();
-    }
-    public function getRegenciesCustom()
-    {
-        $query = $this->db->query("SELECT * FROM regency_list ORDER BY province_id ASC");
+        $query = $this->db->query("SELECT * FROM carousel_data ORDER BY carousel_id ASC");
         return $query->getResultArray();
     }
 }
