@@ -1,4 +1,4 @@
-# Shelf Project iP-Cinema
+# Self Project iP-Cinema
 - Home Page (Carousel Banner)
 - CRUD Data Movie with Image
 - Admin List Page (Table Pagination and Searching)
