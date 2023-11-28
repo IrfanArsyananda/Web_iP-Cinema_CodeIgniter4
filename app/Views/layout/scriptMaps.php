@@ -84,9 +84,9 @@
             <?php
             foreach ($mapsData as $row) :
             ?> {
-                    "title": "<?= $row['regency_name']; ?>",
-                    "latitude": <?= $row['regency_latitude']; ?>,
-                    "longitude": <?= $row['regency_longitude']; ?>,
+                    "title": "<?= $row['name']; ?>",
+                    "latitude": <?= $row['latitude']; ?>,
+                    "longitude": <?= $row['longitude']; ?>,
                     "color": colorSet.next()
                 },
             <?php endforeach;

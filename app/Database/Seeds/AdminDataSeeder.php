@@ -5,7 +5,7 @@ namespace App\Database\Seeds;
 use CodeIgniter\Database\Seeder;
 use CodeIgniter\I18n\Time;
 
-class admin_dataSeeder extends Seeder
+class AdminDataSeeder extends Seeder
 {
     public function run()
     {

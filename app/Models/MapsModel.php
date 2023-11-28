@@ -7,13 +7,13 @@ use CodeIgniter\Model;
 class MapsModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'province_data';
-    protected $primaryKey       = 'id';
+    protected $table            = 'maps_geo';
+    protected $primaryKey       = 'nid';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'province_id', 'province_name', 'province_altname', 'province_latitude', 'province_longitude'];
+    protected $allowedFields    = ['nid', 'parent_nid', 'name', 'serial', 'type', 'latitude', 'longitude', 'status'];
 
     // Dates
     protected $useTimestamps = true;
@@ -45,7 +45,7 @@ class MapsModel extends Model
     }
     public function getRegenciesCustom()
     {
-        $query = $this->db->query("SELECT * FROM regency_list ORDER BY province_id ASC");
+        $query = $this->db->query("SELECT * FROM `maps_geo` WHERE `type`='2' ORDER BY `nid` ASC");
         return $query->getResultArray();
     }
 }
